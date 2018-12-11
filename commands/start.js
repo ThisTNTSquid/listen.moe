@@ -19,7 +19,7 @@ class StartStream extends Command {
       .join()
       .then(connection => {
         console.log("connected to " + connection.channel.id);
-        message.util.send("▶ Stream loading")
+        // message.util.send("▶ Stream loading")
         connection.playBroadcast(this.client.listenMoeBroadcast);
         message.util.send("▶ Stream started");
         // message.reply("")
