@@ -22,7 +22,8 @@ class Bot extends AkairoClient {
       },
       { disableEveryone: true }
     );
-
+    
+    this.nowplaying={};
   }
 }
 

@@ -48,6 +48,8 @@ class BotReadyListener extends Listener {
             type: "PLAYING"
           }
         });
+        this.client.nowplaying.songtitle = data.song.title;
+        this.client.nowplaying.artists = artists;
       }
     };
     ws.onclose = err => {
