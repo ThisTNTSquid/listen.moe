@@ -20,7 +20,7 @@ class StartStream extends Command {
       .then(connection => {
         console.log("connected to " + connection.channel.id);
         message.channel.send("▶ Stream started")
-        connection.playOpusStream("https://listen.moe/opus", { bitrate: 128000 });
+        connection.playStream("https://listen.moe/opus", { bitrate: 128000 });
         // message.reply("")
       })
       .catch(console.error);
