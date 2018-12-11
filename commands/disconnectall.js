@@ -17,7 +17,7 @@ class DisconnectAll extends Command {
     console.log(
       "disconnected from " + voiceConnections.map(vc => vc.channel.id)
     );
-    message.channel.send("⏹ Stream stopped");
+    message.channel.send("⏹ **ALL** connections ended");
   }
 }
 

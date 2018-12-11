@@ -42,14 +42,14 @@ class BotReadyListener extends Listener {
         const data = response.d;
         // Now we do with data as we wish.
         let artists = data.song.artists.map(entry => entry.name);
-        this.client.user.setPresence({
-          game: {
-            name: `${artists.join(", ")} - ${data.song.title}`,
-            type: "PLAYING"
-          }
-        });
+        let songTitle = data.song.title
+
+        // let the client store these value for nowplaying command
         this.client.nowplaying.songtitle = data.song.title;
         this.client.nowplaying.artists = artists;
+
+        // Emit a songchange event on behalf of the client
+        this.client.emit("songchange",artists,songTitle)
       }
     };
     ws.onclose = err => {
