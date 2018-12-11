@@ -17,9 +17,7 @@ class SongChangeListener extends Listener {
       }
     });
 
-    console.log(`-----------------------------------\n\
-    [♫] ${artists.join(", ")} - ${songTitle}\n\
-    -----------------------------------`);
+    console.log(`[♫] ${artists.join(", ")} - ${songTitle}`);
   }
 }
 

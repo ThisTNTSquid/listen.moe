@@ -19,8 +19,9 @@ class StartStream extends Command {
       .join()
       .then(connection => {
         console.log("connected to " + connection.channel.id);
-        message.channel.send("▶ Stream started")
-        connection.playStream("https://listen.moe/opus", { bitrate: 128000 });
+        message.util.send("▶ Stream loading")
+        connection.playBroadcast(this.client.listenMoeBroadcast);
+        message.util.send("▶ Stream started");
         // message.reply("")
       })
       .catch(console.error);
