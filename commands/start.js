@@ -10,7 +10,7 @@ class StartStream extends Command {
   }
 
   exec(message, args) {
-    let channel =  message.member.voiceChannel;
+    let channel = message.member.voiceChannel;
     // console.log(channel);
     if (!channel) {
       return message.reply("Please join the channel before starting stream");
@@ -20,7 +20,7 @@ class StartStream extends Command {
       .then(connection => {
         console.log("connected to " + connection.channel.id);
         // message.util.send("▶ Stream loading")
-        connection.playBroadcast(this.client.listenMoeBroadcast);
+        connection.playStream("https://listen.moe/opus", { bitrate: 128000 });
         message.util.send("▶ Stream started");
         // message.reply("")
       })

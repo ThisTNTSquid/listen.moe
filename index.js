@@ -24,10 +24,10 @@ class Bot extends AkairoClient {
     );
 
     this.nowplaying = {};
-    this.listenMoeBroadcast = this.createVoiceBroadcast().playStream(
-      "https://listen.moe/opus",
-      { bitrate: 128000 }
-    );
+    // this.listenMoeBroadcast = this.createVoiceBroadcast().playStream(
+    //   "https://listen.moe/opus",
+    //   { bitrate: 128000 }
+    // );
   }
 }
 
