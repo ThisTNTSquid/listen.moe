@@ -1,0 +1,8 @@
+version: '2'
+services:
+  bot:
+    image: thistntsquid/node-gyp
+    volumes:
+    - ./:/code
+    working_dir: /code
+    command: node index.js
