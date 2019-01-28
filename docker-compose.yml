@@ -5,4 +5,4 @@ services:
     volumes:
     - ./:/code
     working_dir: /code
-    command: node index.js
+    command: ls /code
