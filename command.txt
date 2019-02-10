@@ -1,1 +1,1 @@
-docker run --rm --mount src="$(pwd)/config",target="/app/config",type=bind --mount src="$(pwd)/.env",target="/app/.env",type=bind thistntsquid/listen-moe
+docker run --rm -it --mount src="$(pwd)",target="/app",type=bind thistntsquid/node-gyp sh
