@@ -1,8 +1,8 @@
 version: '2'
 services:
   bot:
-    image: thistntsquid/node-gyp
+    image: thistntsquid/listen-moe
     volumes:
-    - ./:/code
-    working_dir: /code
+    - ./config:/app/config
+    - ./.env:/app/.env
     command: sh -c "echo $(ls)"
