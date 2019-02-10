@@ -1,8 +1,9 @@
 version: '2'
 services:
   bot:
-    image: thistntsquid/listen-moe
+    image: thistntsquid/node-gyp
     volumes:
+    - ./src:/app
     - ./config:/app/config
     - ./.env:/app/.env
     - ./node_modules:/app/node_modules
