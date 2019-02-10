@@ -1,7 +1,7 @@
-# 📻 This bot had stopped development before this issue had been resolved https://github.com/addaleax/lzma-native/issues/76
+# 📻 Development for ths bot is TERMINATED
 
 > The Bot is offline before the first stable release is tagged
-
+node 
 Discord implementation for listen.moe, literally stream the ~~weeb songs~~ jpops from [listen.moe](https://listen.moe) directly to discord, such that you can yell with your friends while enjoying your musik. (someone told me there's kpop on listen.moe, i'll add support to it next decade)
 
 [![](./assets/button.png)](https://discordapp.com/oauth2/authorize?client_id=369081438798217216&permissions=53578816&scope=bot) ~~make comic sans great again~~
