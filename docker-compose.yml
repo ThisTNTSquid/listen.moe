@@ -5,4 +5,4 @@ services:
     volumes:
     - ./:/code
     working_dir: /code
-    command: ls /code
+    command: sh -c "echo $(ls)"
