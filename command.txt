@@ -1,1 +1,1 @@
-docker run --rm -it --mount src="$(pwd)/config",target="/app/config",type=bind --mount src="$(pwd)/.env",target="/app/.env",type=bind thistntsquid/listen-moe sh
+docker run --rm -it --mount src="$(pwd)/config",target="/app/config",type=bind --mount src="$(pwd)/.env",target="/app/.env",type=bind thistntsquid/listen-moe
