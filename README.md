@@ -1,4 +1,4 @@
-# 📻 listen.moe [the discord radio bot]
+# 📻 This bot had stopped development before this issue had been resolved https://github.com/addaleax/lzma-native/issues/76
 
 > The Bot is offline before the first stable release is tagged
 
