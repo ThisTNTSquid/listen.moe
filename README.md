@@ -1,4 +1,4 @@
-# 📻 gotta wait until it's able to play sound
+# 📻 gotta wait until it's able to play sound, plus this issue resolved https://github.com/addaleax/lzma-native/issues/76
 
 > The Bot is offline before the first stable release is tagged
 node 
