@@ -1,1 +1,4 @@
+# volume mount test
 docker run --rm -it --mount src="$(pwd)",target="/app",type=bind thistntsquid/node-gyp sh
+
+docker run --rm -it --

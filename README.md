@@ -1,4 +1,4 @@
-# 📻 Development for ths bot is TERMINATED
+# 📻 gotta wait until it's able to play sound
 
 > The Bot is offline before the first stable release is tagged
 node 
